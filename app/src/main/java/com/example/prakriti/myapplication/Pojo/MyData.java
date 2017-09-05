@@ -5,17 +5,17 @@ import java.io.Serializable;
 /**
  * Created by Prakriti on 9/1/2017.
  */
-
+//testing
 public class MyData implements Serializable {
-       Integer id;
+        Integer id;
         String  name, description, image,price;
 
-        public MyData(Integer id, String name, String price, String description, String image) {
+        public MyData(Integer id, String name,  String description, String image,String price) {
                 this.id = id;
                 this.name = name;
-                this.price = price;
                 this.description = description;
                 this.image = image;
+                this.price = price;
 
         }
 
