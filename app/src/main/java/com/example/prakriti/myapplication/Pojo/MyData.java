@@ -8,14 +8,14 @@ import java.io.Serializable;
 //testing
 public class MyData implements Serializable {
         Integer id;
-        String  name, description, image,price;
+        String  name, image,description,price;
 
-        public MyData(Integer id, String name,  String description, String image,String price) {
+        public MyData(Integer id, String name, String image,  String description,String price) {
                 this.id = id;
                 this.name = name;
+                this.price = price;
                 this.description = description;
                 this.image = image;
-                this.price = price;
 
         }
 

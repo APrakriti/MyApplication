@@ -1,4 +1,4 @@
-package com.example.prakriti.myapplication;
+package com.example.prakriti.myapplication.Fragment;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -17,7 +17,9 @@ import android.widget.Toast;
 
 
 import com.example.prakriti.myapplication.Adapter.MycustomAdapter;
+import com.example.prakriti.myapplication.JsonParser;
 import com.example.prakriti.myapplication.Pojo.MyData;
+import com.example.prakriti.myapplication.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -89,13 +91,13 @@ public class MainActivityFragment extends Fragment {
                         Integer id = dataObject.getInt("id");
                         String name = dataObject.getString("name");
                         String image = dataObject.getString("image");
-                        Log.e("donkey", "sam");
                         String description = dataObject.getString("description");
                         String price = dataObject.getString("price");
 
-                        MyData myData= new MyData(id, name,image,description,price);
+                        MyData myData= new MyData(id,name,image,description,price);
                         data_list.add(myData);
                         flag = 2;
+                        Log.e("donkey", "sam");
 
                     }
 
